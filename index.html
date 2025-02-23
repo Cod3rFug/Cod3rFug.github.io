@@ -1,447 +1,167 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="widthice-width, initial-scale=1.0">
-
-<title>TikTek313</title>
-
-<style>
-
-  body {
-
-    font-family: Arial, sans-serif;
-
-    margin: 0;
-
-    padding: 0;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    min-height: 100vh;
-
-    background-color: #f4f4f4;
-
-    background-image: url("bg.gif");
-
-    background-size: cover;
-
-    background-position: center;
-
-  }
-
-
-
-  .container {
-
-    text-align: center;
-
-    color: white;
-
-  }
-
-
-
-  h1 {
-
-    font-size: 32px;
-
-    color: #fff;
-
-    margin-bottom: 10px;
-
-    text-transform: uppercase;
-
-    letter-spacing: 2px;
-
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-
-  }
-
-
-
-  .contacts {
-
-    margin-top: 20px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
-  }
-
-
-
-  .contact-item {
-
-    margin: 10px 0;
-
-  }
-
-
-
-  .contact-link {
-
-    text-decoration: none;
-
-    color: #fff;
-
-    display: flex;
-
-    align-items: center;
-
-    padding: 10px;
-
-    border: 2px solid transparent;
-
-    border-radius: 8px;
-
-    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
-
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-    font-size: 16px;
-
-    font-weight: bold;
-
-  }
-
-  .contact-link:hover {
-
-    transform: scale(1.1);
-
-    border-color: #333;
-
-  }
-
-
-
-  .contact-link.highlight-button:hover {
-
-    background-color: #fff;
-
-    color: #333;
-
-  }
-
-
-
-  .icon {
-
-    width: 30px;
-
-    height: 30px;
-
-    margin-right: 10px;
-
-  }
-
-
-
-  /* Dropdown Menu Styles */
-
-  .dropdown {
-
-    position: relative;
-
-    display: inline-block;
-
-  }
-
-
-
-  .dropdown-content {
-
-    display: none;
-
-    position: absolute;
-
-    background-color: rgba(0, 0, 0, 0.8);
-
-    min-width: 150px;
-
-    border-radius: 8px;
-
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-
-    z-index: 1;
-
-  }
-
-
-
-  .dropdown:hover .dropdown-content {
-
-    display: block;
-
-  }
-
-
-
-  .dropdown-item {
-
-    padding: 10px;
-
-    text-align: left;
-
-    transition: background-color 0.3s;
-
-  }
-
-
-
-  .dropdown-item:hover {
-
-    background-color: rgba(255, 255, 255, 0.1);
-
-  }
-
-
-
-  /* Button in Top Right Corner */
-
-  .top-right-button {
-
-    position: absolute;
-
-    top: 20px;
-
-    right: 60px;
-
-  }
-
-
-
-  /* Left Button */
-
-  .left-button {
-
-    position: absolute;
-
-    top: 20px;
-
-    left: 60px;
-
-  }
-
-  .audio-controls {
-
-    position: fixed;
-
-    bottom: 20px;
-
-    right: 20px;
-
-    display: flex;
-
-    align-items: center;
-
-  }
-
-
-
-  #button-text {
-
-    color: #d9ddde;
-
-    margin-left: 6px;
-
-  }
-
-  .switch input {
-
-    display: none;
-
-  }
-
-</style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livingston</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f4f4f4;
+      background-image: url("bg.gif");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .container {
+      text-align: center;
+      color: white;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #fff;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .contacts {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contact-item {
+      margin: 10px 0;
+    }
+
+    .contact-link {
+      text-decoration: none;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border: 2px solid transparent;
+      border-radius: 8px;
+      transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .contact-link:hover {
+      transform: scale(1.1);
+      border-color: #333;
+    }
+
+    .contact-link.highlight-button:hover {
+      background-color: #fff;
+      color: #333;
+    }
+
+    .icon {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    /* Dropdown Menu Styles */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.8);
+      min-width: 150px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-item {
+      padding: 10px;
+      text-align: left;
+      transition: background-color 0.3s;
+    }
+
+    .dropdown-item:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Button in Top Right Corner */
+    .top-right-button {
+      position: absolute;
+      top: 20px;
+      right: 60px;
+    }
+
+    /* Left Button */
+    .left-button {
+      position: absolute;
+      top: 20px;
+      left: 60px;
+    }
+
+    .audio-controls {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    #button-text {
+      color: #d9ddde;
+      margin-left: 6px;
+    }
+
+    .switch input {
+      display: none;
+    }
+  </style>
 </head>
-
 <body>
-
-<div class="container">
-
-  <h1>Livingston</h1>
-
-  <!-- <p>Привет! Наша команда принимала участие во многих проектах, мы сможем решить почти любую задачу нашего клиента!</p>
-
-  <p>Качество, быстрое выполнение, приятная цена, это все о нашей команде! Так-же решаем вопросы в сфере кибер-безопасности. </p> -->
-
-  <p> </p>
-
-  <b>Контактные данные</b>
-
-  <div class="contacts">
-
-    <div class="contact-item">
-
-      <a href="https://t.me/Igloonnxs" target="_blank" class="contact-link">
-
-        <img src="telegram-icon.png" alt="Telegram" class="icon">
-
-        Telegram
-
-      </a>
-
-    </div>
-
-    <div class="contact-item">
-
-      <a href="https://www.instagram.com/funwix.offical" target="_blank" class="contact-link">
-
-        <img src="instagram-icon.png" alt="Instagram" class="icon">
-
-        Instagram
-
-      </a>
-
-    </div>
-
-    <!-- <div class="contact-item">
-
-      <a href="https://www.youtube.com/" target="_blank" class="contact-link">
-
-        <img src="youtube-icon.png" alt="YouTube" class="icon">
-
-        YouTube
-
-      </a>
-
-    </div> -->
-
-    <!-- <div class="contact-item">
-
-      <a href="https://www.tiktok.com/" target="_blank" class="contact-link">
-
-        <img src="tiktok-icon.png" alt="TikTok" class="icon">
-
-        TikTok
-
-      </a>
-
-    </div> -->
-
-    <div class="contact-item">
-
-        <a href="https://vk.com/tiktek313" target="_blank" class="contact-link">
-
-            <img src="vk-icon.png" alt="VK" class="icon">
-
-            VK
-
-          </a>
-
-        </div>
-
-        <!-- Dropdown Button -->
-
-        <div class="contact-item dropdown top-right-button">
-
-          <a href="#" class="contact-link highlight-button">
-
-            Специализация
-
-          </a>
-
-          <div class="dropdown-content">
-
-            <div class="dropdown-item">
-
-              <img src="python-icon.png" alt="Python" class="icon">
-
-              Python
-
-            </div>
-
-            <div class="dropdown-item">
-
-              <img src="asdasdasd.jpg" alt="JavaScript" class="icon">
-
-              JavaScript
-
-            </div>
-
-            <div class="dropdown-item">
-
-              <img src="css-logo.png" alt="CSS" class="icon">
-
-              CSS
-
-            </div>
-
-            <div class="dropdown-item">
-
-              <img src="html-icon.png" alt="HTML" class="icon">
-
-              HTML
-
-            </div>
-
-            <div class="dropdown-item">
-
-              <img src="php-icon.png" alt="PHP" class="icon">
-
-              PHP
-
-            </div>
-
-            <div class="dropdown-item">
-
-              <img src="java.png" alt="JAVA" class="icon">
-
-              JAVA
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <!-- Left Button
-
-        <div class="contact-item left-button">
-
-          <a href="item.html" class="contact-link highlight-button">
-
-            Правила общения
-
-          </a>
-
-        </div>
-
-      </div> -->
-
-      
-
-      <!-- Кнопка "Проекты в которых я работал"
-
-      <div class="contact-item" style="position: fixed; bottom: 20px; right: 20px;">
-
-        <a href="project.html" class="contact-link highlight-button">
-
-          Проекты в которых я работал
-
+  <div class="container">
+    <h1>Livingston</h1>
+    <p> </p>
+    <b>Контактные данные</b>
+    <div class="contacts">
+      <div class="contact-item">
+        <a href="https://t.me/Igloonnxs" target="_blank" class="contact-link">
+          <img src="telegram-icon.png" alt="Telegram" class="icon">
+          Telegram
         </a>
-
       </div>
 
-    </div> -->
-
+      <!-- Dropdown Button -->
+      <div class="contact-item dropdown top-right-button">
+        <a href="#" class="contact-link highlight-button">
+          Специализация
+        </a>
+        <div class="dropdown-content">
+          <div class="dropdown-item">
+            <img src="python-icon.png" alt="Python" class="icon">
+            Python
+          </div>
+        </div>
+      </div>
     </div>
-
-    </body>
-
-    </html>
-
-    
+  </div>
+</body>
+</html>
