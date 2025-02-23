@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Livingston BIO</title>
+  <title>BIO</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -14,7 +14,6 @@
       align-items: center;
       min-height: 100vh;
       background-color: #f4f4f4;
-      background-image: url("bg.gif");
       background-size: cover;
       background-position: center;
     }
@@ -137,51 +136,15 @@
 
     /* Медиа-запросы для мобильных устройств */
     @media (max-width: 768px) {
-      h1 {
-        font-size: 24px; /* Уменьшаем размер заголовка */
-      }
-
-      .contact-link {
-        font-size: 14px; /* Уменьшаем размер текста ссылок */
-        padding: 8px; /* Уменьшаем отступы */
-      }
-
-      .icon {
-        width: 20px; /* Уменьшаем размер иконок */
-        height: 20px;
-      }
-
-      .dropdown-content {
-        min-width: 120px; /* Уменьшаем ширину выпадающего меню */
-      }
-
-      .dropdown-item {
-        padding: 8px; /* Уменьшаем отступы в выпадающем меню */
+      body {
+        background-image: url("mobile-bg.jpg"); /* Фон для мобильных устройств */
       }
     }
 
     /* Медиа-запросы для компьютеров */
     @media (min-width: 769px) {
-      h1 {
-        font-size: 32px; /* Стандартный размер заголовка */
-      }
-
-      .contact-link {
-        font-size: 16px; /* Стандартный размер текста ссылок */
-        padding: 10px; /* Стандартные отступы */
-      }
-
-      .icon {
-        width: 30px; /* Стандартный размер иконок */
-        height: 30px;
-      }
-
-      .dropdown-content {
-        min-width: 150px; /* Стандартная ширина выпадающего меню */
-      }
-
-      .dropdown-item {
-        padding: 10px; /* Стандартные отступы в выпадающем меню */
+      body {
+        background-image: url("desktop-bg.jpg"); /* Фон для компьютеров */
       }
     }
   </style>
